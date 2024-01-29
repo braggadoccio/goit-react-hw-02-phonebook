@@ -26,7 +26,6 @@ export class App extends Component {
     const { contacts } = this.state;
 
     if (contacts !== prevState.contacts) {
-      // if a contact is new, set value to localStorage
       localStorage.setItem('contacts', JSON.stringify(contacts));
     }
   }
